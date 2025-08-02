@@ -1,6 +1,6 @@
 package org.lessons.java.abs;
 
-public class Aquila extends Animale {
+public class Aquila extends AbstractAnimale implements Volante {
   private float aperturaAlare;
 
   public Aquila(String nome, int eta, float aperturaAlare) {
@@ -14,6 +14,10 @@ public class Aquila extends Animale {
 
   public void setAperturaAlare(float aperturaAlare) {
     this.aperturaAlare = aperturaAlare;
+  }
+
+  public void vola() {
+    System.out.println("Sto volando!!");
   }
 
   @Override

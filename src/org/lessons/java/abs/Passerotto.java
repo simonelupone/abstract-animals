@@ -1,6 +1,6 @@
 package org.lessons.java.abs;
 
-public class Passerotto extends Animale {
+public class Passerotto extends AbstractAnimale implements Volante {
   private String colorePiume;
 
   public Passerotto(String nome, int eta, String colorePiume) {
@@ -14,6 +14,10 @@ public class Passerotto extends Animale {
 
   public void setColorePiume(String colorePiume) {
     this.colorePiume = colorePiume;
+  }
+
+  public void vola() {
+    System.out.println("Sto volando!!");
   }
 
   @Override

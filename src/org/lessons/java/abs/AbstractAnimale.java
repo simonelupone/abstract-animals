@@ -1,10 +1,10 @@
 package org.lessons.java.abs;
 
-public abstract class Animale {
+public abstract class AbstractAnimale {
   private String nome;
   private int eta;
 
-  public Animale(String nome, int eta) {
+  public AbstractAnimale(String nome, int eta) {
     this.nome = nome;
     this.eta = eta;
   }

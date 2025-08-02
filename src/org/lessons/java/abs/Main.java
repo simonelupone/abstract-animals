@@ -55,5 +55,20 @@ public class Main {
     flipper.mangia();
     System.out.print(". Ora " + flipper.getNome() + " dorme...");
     flipper.dormi();
+
+    System.out.println("\n");
+
+    // es interfacce
+    faiVolare(cipi);
+
+    faiNuotare(flipper);
+  }
+
+  public static void faiVolare(Volante animale) {
+    animale.vola();
+  }
+
+  public static void faiNuotare(Nuotante animale) {
+    animale.nuota();
   }
 }

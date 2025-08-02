@@ -1,6 +1,6 @@
 package org.lessons.java.abs;
 
-public class Delfino extends Animale {
+public class Delfino extends AbstractAnimale implements Nuotante {
   private int componentiBranco;
 
   public Delfino(String nome, int eta, int componentiBranco) {
@@ -14,6 +14,10 @@ public class Delfino extends Animale {
 
   public void setComponentiBranco(int componentiBranco) {
     this.componentiBranco = componentiBranco;
+  }
+
+  public void nuota() {
+    System.out.println("Sto nuotando!!");
   }
 
   @Override
